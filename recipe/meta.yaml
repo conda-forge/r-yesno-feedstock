@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/yesno_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/yesno/yesno_{{ version }}.tar.gz
-  sha256: 0ac1c7c4c2b64cc3e1961581b4de821e2844b724da8ca301d0092ff866287b50
+  sha256: 824e614ca9bb1e75104a22ef2cc048a0db2040ad652be1edebf76535b4704a83
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -39,7 +39,7 @@ about:
   summary: Asks Yes-No questions with variable or custom responses.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
