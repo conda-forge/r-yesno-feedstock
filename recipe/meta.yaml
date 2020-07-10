@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/yesno_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/yesno/yesno_{{ version }}.tar.gz
-  sha256: 824e614ca9bb1e75104a22ef2cc048a0db2040ad652be1edebf76535b4704a83
+  sha256: 2282ba2536336ce209d884ec8091d950d7eedc8233b443a11237cdc943453bd9
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
