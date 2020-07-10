@@ -5,7 +5,7 @@ Home: https://github.com/poissonconsulting/yesno
 
 Package license: GPL-2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Asks Yes-No questions with variable or custom responses.
 
