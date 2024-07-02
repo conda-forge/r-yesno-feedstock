@@ -1,6 +1,5 @@
 {% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-yesno
@@ -13,8 +12,7 @@ source:
   sha256: 2282ba2536336ce209d884ec8091d950d7eedc8233b443a11237cdc943453bd9
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
